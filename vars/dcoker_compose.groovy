@@ -1,3 +1,7 @@
 def call(){
-    sh "docker-compose down && docker-compose up -d"
+    sh '''
+        cd /home/ubuntu/workspace/DjangoCICD
+        docker compose down
+        docker compose up -d
+    '''
 }
